@@ -1,4 +1,4 @@
 # Auth
 simple auth for server SwagCraft
 
-_Download:_ _comming soon..._
+__Download:__ _comming soon..._
