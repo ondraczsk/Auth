@@ -2,6 +2,7 @@ name: Auth
 version: DEV
 author: GamakCZ
 description: Auth Plugin
+main: GamaK\Auth
 
 api:
  - 1.0.0
