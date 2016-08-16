@@ -1,1 +1,15 @@
 
+###################################
+# Main configuration file of Auth #
+###################################
+
+## Prefix = [Auth]
+enable.prefix: "true"
+
+## if there is a "1" will be used through the command log
+## if there will be "2", will work ChatLogin
+use.auth: "1"
+
+## messages:
+login.message.1: "- Welcome on the Server"
+login
