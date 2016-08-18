@@ -3,8 +3,11 @@
 # Main configuration file of Auth #
 ###################################
 
-## Prefix = [Auth]
+## Prefix
 enable-prefix: "true"
+
+## Prefix format:
+prefix: "§3[Auth]"
 
 ## if there is a "1" will be used through the command log
 ## if there will be "2", will work ChatLogin
