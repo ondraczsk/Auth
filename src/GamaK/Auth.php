@@ -13,8 +13,8 @@ use pocketmine\utils\TextFormat as C;
 
 class Auth extends PB implements L {
 
-  public $prefix = C::DARK_GRAY . "[" . C::GRAY . "Auth" . C::DARK_GRAY . "]" . C::GOLD;
-  public $atype = $this->getConfig()->get("use.auth");
+  public $prefix = C::DARK_GRAY . "[" . C::GRAY . "Auth" . C::DARK_GRAY . "] " . C::GOLD;
+  public $auth;
   
   public function onEnable() {
   
@@ -24,23 +24,28 @@ class Auth extends PB implements L {
     
   }
   
+  public function authChanger() {
+    $authtype = $this->getConfig->get("use-auth");
+    
+    if $authtype = "1" {
+      $auth = auth;
+    } elseif $authtype = "2" {
+      $auth = chatlogin;
+    }
+  }
+  
   public function onCommand(CommandSender $sender, Command $cmd, $label, Array $args) {
     if(!$sender instanceof Player) {
       return true;
     }
-    if($args[0]=="auth") {
-      if(empty($args[1])) {
-        $sender->sendMessage("Auth Commands:");
-        $sender->sendMessage("/login -> login command");
-        $sender->sendMessage("/reg -> register command");
-        $sender->sendMessage("/auth info -> info command");
-      }
-      if($args[2]=="info") {
-        $sender->sendMessage("*** Info about auth ***");
-        $sender->sendMessage("- Created by GamaK");
-        $sender->sendMessage("- website: bit.do/gamcz");
-        $sender->sendMessage("- for server SwagCraft");
-        $sender->sendMessage("- bit.do/swagcraft");
+    switch($cmd->getName())
+      if($args[0]=="auth") {
+        if(empty($args[1])) {
+          $sender->sendMessage("Auth Commands:");
+          $sender->sendMessage("/login -> login command");
+          $sender->sendMessage("/reg -> register command");
+          $sender->sendMessage("/auth info -> info command");
+        } 
       }
     }
     
