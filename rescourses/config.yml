@@ -4,12 +4,37 @@
 ###################################
 
 ## Prefix = [Auth]
-enable.prefix: "true"
+enable-prefix: "true"
 
 ## if there is a "1" will be used through the command log
 ## if there will be "2", will work ChatLogin
-use.auth: "1"
+use-auth: "1"
 
-## messages:
-login.message.1: "- Welcome on the Server"
-login
+## regtiser auth messages:
+register-a-message-1: "§5-----------------------------"
+register-a-message-2: "§5> §6Welcome on server."
+register-a-message-3: "§5> §6This server using Auth"
+register-a-message-4: "§5> §6register using /reg <password>"
+register-a-message-5: "§5-----------------------------"
+
+## regtiser chatlogin messages:
+register-chl-message-1: "§5-------------------------------"
+register-chl-message-2: "§5> §6This server using auth."
+register-chl-message-3: "§5> §6Register your account"
+register-chl-message-4: "§5> §6using write password to chat"
+register-chl-message-5: "§5-------------------------------"
+
+## login auth messages:
+login-a-message-1: "§5-----------------------------"
+login-a-message-2: "§5> §6Welcome back!"
+login-a-message-3: "§5> §6You must be logged in"
+login-a-message-4: "§5> §6login using /log <password>"
+login-a-message-5: "-------------------------------"
+
+## login Chatlogin messages:
+login-ch-message-1: "§5-------------------------"
+login-ch-message-2: "§5> §6Welcome back!"
+login-ch-message-3: "§5> §6Log in using wrie "
+login-ch-message-4: "§5> §6password to chat"
+login-ch-message-5: "---------------------------"
+
