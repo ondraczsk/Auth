@@ -13,7 +13,14 @@ api:
  commands:
  
   login:
-  
+   description: login command
+   aliases: log
+   
   register:
   
   auth:
+
+permissions:
+  auth.cmd.help:
+   defautl: op
+   
