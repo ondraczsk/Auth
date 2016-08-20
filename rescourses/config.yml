@@ -41,3 +41,5 @@ login-ch-message-3: "§5> §6Log in using wrie "
 login-ch-message-4: "§5> §6password to chat"
 login-ch-message-5: "---------------------------"
 
+## login description command
+login-command-des: "use: /log <password>"
